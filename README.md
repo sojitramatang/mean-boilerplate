@@ -1,2 +1,4 @@
 # mean-boilerplate
-MERN(Database(MYSQL, MongoDB) Express ReactJS Node) stack Boilerplate.
+## MERN stack Boilerplate.
+- Database(MYSQL, MongoDB) Express ReactJS Node
+
