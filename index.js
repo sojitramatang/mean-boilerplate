@@ -1,12 +1,14 @@
-import express from 'express';
-import config from './config.js';
+const express = require('express');
+const config = require('./config');
+const proxy = require('./proxy');
+
 const app = express();
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-
-app.listen(3000, () => {
+app.use(proxy)
+app.listen(config.server.port, () => {
     console.log(`loclhost:${config.server.port}`);
 });
