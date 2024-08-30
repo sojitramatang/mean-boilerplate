@@ -5,9 +5,9 @@ const config = require('../config');
 const router = express.Router();
 
 router.use(
-    "*", 
+    "", 
     createProxyMiddleware({
-        target: `loclhost:${config.server.port}`,
+        target: `http://localhost:${config.frontend.port}`,
         changeOrigin: true
     })
 )
